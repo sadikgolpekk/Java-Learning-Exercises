@@ -234,6 +234,8 @@ Java'da diziler, aynı türdeki öğeleri saklayan veri yapılarına verilen isi
 
 ## Dizi Tanımlama
 
+![maxresdefault](https://github.com/user-attachments/assets/6f1109a8-269e-47ad-a3db-b650d7cc803d)
+
 Bir dizi tanımlamak için şu sözdizimi kullanılır:
 
 ```java
