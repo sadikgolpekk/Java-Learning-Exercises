@@ -310,6 +310,7 @@ System.out.println(vector.get(0));  // Eleman erişimi: "X"
 **Constructor** (Yapıcı), bir sınıfın örneği (instance) oluşturulduğunda çağrılan özel bir yöntemdir. Constructor, sınıfın alanlarını (fields) başlatmak ve sınıfın örneğini doğru şekilde kurmak için kullanılır. Java'da **constructor** sınıfın temel bileşenlerinden biridir ve sınıfın doğru bir şekilde başlatılmasını sağlar.
 
 ## Constructor Nedir?
+![Java_Constructors](https://github.com/user-attachments/assets/178d2f5b-ab2b-4ea6-9d47-a073516b85af)
 
 - **Constructor** adı, sınıf adıyla aynı olmalıdır.
 - Constructor'lar geri dönüş değeri içermez, yani bir değer döndürmezler.
