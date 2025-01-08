@@ -36,13 +36,10 @@ class Cat extends Animal {
     // Cat sınıfı, Animal sınıfından miras alır
 }
 
-### `super` Anahtar Kelimesi
 
-`super`, bir alt sınıfın üst sınıfının metodlarına veya yapıcılarına (constructor) erişmek için kullanılır. Alt sınıfın, üst sınıfın yapıcısını çağırması için `super()` kullanılır. Bu, alt sınıfın özelliklerinin doğru bir şekilde başlatılmasını sağlar. Örneğin:
 
-```java
-public Cat(String isim, int yas) {
-    super(isim, yas); // Animal sınıfının yapıcısını çağırır
-}
+
+
+
 
 
