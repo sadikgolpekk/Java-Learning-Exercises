@@ -305,4 +305,89 @@ System.out.println(vector.get(0));  // Eleman erişimi: "X"
 
 ```
 
+# Java'da Constructor Kullanımı
 
+**Constructor** (Yapıcı), bir sınıfın örneği (instance) oluşturulduğunda çağrılan özel bir yöntemdir. Constructor, sınıfın alanlarını (fields) başlatmak ve sınıfın örneğini doğru şekilde kurmak için kullanılır. Java'da **constructor** sınıfın temel bileşenlerinden biridir ve sınıfın doğru bir şekilde başlatılmasını sağlar.
+
+## Constructor Nedir?
+
+- **Constructor** adı, sınıf adıyla aynı olmalıdır.
+- Constructor'lar geri dönüş değeri içermez, yani bir değer döndürmezler.
+- Constructor'lar genellikle sınıfın **alanlarını** (fields) başlatmak ve nesneyi başlatmak için kullanılır.
+- Her sınıfın en az bir constructor'ı olmalıdır. Eğer sınıf içinde bir constructor tanımlanmazsa, Java otomatik olarak bir **varsayılan (default)** constructor sağlar.
+- Bir sınıfın birden fazla constructor'ı olabilir. Bu, **constructor overloading** (constructor aşırı yüklemesi) olarak adlandırılır ve nesne oluşturulurken farklı parametrelerle başlatma yapabilmeyi sağlar.
+
+## Constructor Türleri
+
+### 1. **Varsayılan Constructor (Default Constructor)**
+
+Eğer sınıf içinde hiç constructor tanımlanmazsa, Java otomatik olarak bir **varsayılan constructor** sağlar. Bu constructor, sınıfın tüm alanlarını varsayılan değerlere atar:
+  - **Sayısal türler** (örneğin `int`, `double`) için `0`
+  - **Nesne referansları** (örneğin `String`, `Object`) için `null`
+  - **Booleans** için `false`
+
+Varsayılan constructor, genellikle sınıfın alanlarını başlatmak için kullanılır. Eğer bir parametreli constructor yazmazsanız, Java'nın otomatik sağladığı constructor kullanılacaktır.
+
+#### Örnek: Varsayılan Constructor Kullanımı
+
+```java
+public class Car {
+    String model;
+    int year;
+
+    // Varsayılan constructor
+    public Car() {
+        model = "Unknown";  // Sınıfın alanlarını varsayılan değerlere ayarladık
+        year = 0;
+    }
+
+    public void displayInfo() {
+        System.out.println("Model: " + model + ", Year: " + year);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Car car1 = new Car();  // Varsayılan constructor çağrılır
+        car1.displayInfo();     // Çıktı: Model: Unknown, Year: 0
+    }
+}
+
+```
+
+
+
+### 2. Parametreli Constructor 
+
+Aşağıda bir sınıfın constructor kullanımı gösterilmektedir:
+
+```java
+public class Person {
+    String name;
+    int age;
+
+    // Parametresiz constructor
+    public Person() {
+        name = "Unknown";
+        age = 0;
+    }
+
+    // Parametreli constructor
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Parametresiz constructor ile nesne oluşturma
+        Person person1 = new Person();
+
+        // Parametreli constructor ile nesne oluşturma
+        Person person2 = new Person("Alice", 25);
+
+        System.out.println(person1.name + " - " + person1.age); // Çıktı: Unknown - 0
+        System.out.println(person2.name + " - " + person2.age); // Çıktı: Alice - 25
+    }
+}
