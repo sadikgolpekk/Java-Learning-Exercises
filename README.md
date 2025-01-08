@@ -243,7 +243,7 @@ Bir dizi tanımlamak için şu sözdizimi kullanılır:
 
 int[] numbers = new int[5];
 String[] names = new String[3];
-
+```
 
 # Java'da Düzensiz Diziler (Ragged Arrays)
 
