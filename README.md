@@ -287,7 +287,7 @@ raggedArray[2] = new int[1]; // Üçüncü satırda 1 eleman
 
 ### **ArrayList Kullanımı**
 
-Bir **ArrayList** tanımlamak ve kullanmak için şu sözdizimini kullanabilirsiniz:
+Bir **ArrayList** ve **Vector** tanımlamak ve kullanmak için şu sözdizimini kullanabilirsiniz:
 
 ```java
 ArrayList<String> list = new ArrayList<>();  // ArrayList oluşturma
