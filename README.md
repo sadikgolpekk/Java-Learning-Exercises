@@ -33,6 +33,7 @@ Java uygulamaları, doğrudan donanım üzerinde çalışmaz. Bunun yerine, derl
   ```java
   import java.util.*;
   ```
+![java1](https://github.com/user-attachments/assets/20337b96-bc52-467a-a679-05858c62dbc5)
 
 ## Temel Programlama Kavramları
 
