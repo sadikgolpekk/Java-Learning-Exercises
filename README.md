@@ -187,6 +187,8 @@ System.out.println(var + " kez A");
 
 # Java Kimlik Kuralları (Identifiers)
 
+![variables](https://github.com/user-attachments/assets/a56d5dc8-e7e0-4260-b5cf-56bbb3762c25)
+
 ## Kimlikler (Identifiers)
 
 Java'da **kimlikler** (identifiers), değişkenlerin, metodların veya sınıfların isimleridir. Bir kimlik, yalnızca harfler, rakamlar, alt çizgi karakteri (_) ve dolar işareti ($) içerebilir. Ayrıca, bir kimlik **rakamla** başlayamaz. Türkçe karakterler de kullanılabilir.
