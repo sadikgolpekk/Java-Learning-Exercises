@@ -245,4 +245,19 @@ int[] numbers = new int[5];
 String[] names = new String[3];
 
 
+# Java'da Düzensiz Diziler (Ragged Arrays)
+
+Java'da iki boyutlu diziler, dizilerin dizisi olarak tanımlanır. Bu dizilerde her satır farklı sayıda elemana sahip olabilir. Böyle dizilere **düzensiz diziler** (ragged arrays) denir.
+
+## Düzensiz Dizi (Ragged Array)
+
+Bir düzenli iki boyutlu dizide her satır aynı sayıda elemana sahipken, düzensiz dizilerde her satır farklı sayıda elemana sahip olabilir.
+
+### Örnek
+
+```java
+int[][] raggedArray = new int[3][];
+raggedArray[0] = new int[2]; // İlk satırda 2 eleman
+raggedArray[1] = new int[3]; // İkinci satırda 3 eleman
+raggedArray[2] = new int[1]; // Üçüncü satırda 1 eleman
 
