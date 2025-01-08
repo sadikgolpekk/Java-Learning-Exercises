@@ -228,3 +228,19 @@ Aşağıdaki değişken isimleri **geçersiz** kimliklerdir çünkü Java'nın k
 Java'da bir kimlik belirlerken, yukarıdaki kurallara uymanız gerekmektedir. Kimlikler sadece harfler, sayılar, alt çizgi (_) ve para birimi sembollerini içerebilir. İlk karakterin bir rakam olmaması gerektiğini unutmayın. Ayrıca, özel semboller ve boşluk gibi karakterler geçerli kimlik isimlerinde bulunmamalıdır.
 
 
+# Java'da Dizi Tanımlama
+
+Java'da diziler, aynı türdeki öğeleri saklayan veri yapılarına verilen isimdir. Diziler sabit boyutlu olup, her elemanın türü aynı olmalıdır.
+
+## Dizi Tanımlama
+
+Bir dizi tanımlamak için şu sözdizimi kullanılır:
+
+```java
+<veri_türü>[] <dizi_adı>;
+
+int[] numbers = new int[5];
+String[] names = new String[3];
+
+
+
