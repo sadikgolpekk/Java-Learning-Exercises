@@ -215,10 +215,8 @@ Aşağıdaki değişken isimleri **geçersiz** kimliklerdir çünkü Java'nın k
 - `int k!34;`  *(Geçersiz: İçinde `!` karakteri bulunuyor.)*
 - `int 2dfg;`  *(Geçersiz: İlk karakter rakamla başlıyor.)*
 - `int @kl;`   *(Geçersiz: İçinde `@` sembolü bulunuyor.)*
-- `int $fg;`   *(Geçersiz: Dolar işareti ($) geçerli olsa da, genellikle sadece dolar ile başlamak yaygın değildir.)*
 - `int k.t;`   *(Geçersiz: İçinde nokta (.) karakteri bulunuyor.)*
 - `int k-t;`   *(Geçersiz: İçinde tire (-) karakteri bulunuyor.)*
-- `int $;`     *(Geçersiz: Dolar işareti ($) ile başlayan bir isim olması genellikle önerilmez.)*
 - `int a ei;`  *(Geçersiz: İçinde boşluk bulunuyor.)*
 
 ### Notlar:
