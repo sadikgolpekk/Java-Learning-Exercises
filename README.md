@@ -260,4 +260,49 @@ int[][] raggedArray = new int[3][];
 raggedArray[0] = new int[2]; // İlk satırda 2 eleman
 raggedArray[1] = new int[3]; // İkinci satırda 3 eleman
 raggedArray[2] = new int[1]; // Üçüncü satırda 1 eleman
+```
+
+# Java'da ArrayList ve Vector Kullanımı
+
+**ArrayList** ve **Vector**, Java'da dinamik veri yapıları olarak kullanılan koleksiyon sınıflarıdır. Her ikisi de öğe eklemek, çıkarmak ve üzerinde işlem yapmak için kullanılır. Ancak bazı önemli farklar vardır.
+
+## ArrayList ve Vector Arasındaki Farklar
+
+### 1. **Senkronizasyon**
+   - **Vector**: Senkronized bir koleksiyon olup, çok iş parçacıklı ortamlar için güvenlidir ancak performans kaybına yol açabilir.
+   - **ArrayList**: Senkronize edilmemiştir, bu yüzden performansı daha yüksektir ancak çok iş parçacıklı ortamlarda güvenlik garantisi yoktur.
+
+### 2. **Büyüme Stratejisi**
+   - **Vector**: Kapasite, her ekleme işlemi sonrası iki katına çıkar.
+   - **ArrayList**: Kapasite genellikle %50 oranında artar.
+
+### 3. **Performans**
+   - **Vector**: Daha düşük performans, çünkü senkronize edilmiştir.
+   - **ArrayList**: Daha hızlıdır çünkü senkronize edilmez.
+
+### 4. **Veri Türleri**
+   - **ArrayList** ve **Vector** sadece nesneleri tutar, ilkel türler **Integer**, **Boolean** gibi nesnelere dönüştürülmelidir.
+
+## Kullanım
+
+### **ArrayList Kullanımı**
+
+Bir **ArrayList** tanımlamak ve kullanmak için şu sözdizimini kullanabilirsiniz:
+
+```java
+ArrayList<String> list = new ArrayList<>();  // ArrayList oluşturma
+list.add("A");  // Eleman ekleme
+list.add("B");
+
+System.out.println(list.get(0));  // Eleman erişimi: "A"
+
+
+Vector<String> vector = new Vector<>();  // Vector oluşturma
+vector.add("X");  // Eleman ekleme
+vector.add("Y");
+
+System.out.println(vector.get(0));  // Eleman erişimi: "X"
+
+```
+
 
