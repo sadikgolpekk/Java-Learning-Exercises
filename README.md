@@ -26,6 +26,8 @@ Java uygulamaları, doğrudan donanım üzerinde çalışmaz. Bunun yerine, derl
 - Bir programı yazan kişiye **programcı** (programmer) denir.
 - Programla etkileşime giren kişiye ise **kullanıcı** (user) denir.
 
+![java1](https://github.com/user-attachments/assets/20337b96-bc52-467a-a679-05858c62dbc5)
+
 ## Paketler (Packages)
 
 - **Paket** (package), önceden tanımlanmış sınıflardan oluşan bir kütüphanedir.
@@ -33,7 +35,7 @@ Java uygulamaları, doğrudan donanım üzerinde çalışmaz. Bunun yerine, derl
   ```java
   import java.util.*;
   ```
-![java1](https://github.com/user-attachments/assets/20337b96-bc52-467a-a679-05858c62dbc5)
+
 
 ## Temel Programlama Kavramları
 
@@ -99,6 +101,8 @@ System.out.println(var + " kez A");
 - Dosya adı, sınıf adıyla aynı olmalıdır.
 
 ## Derleme ve Çalıştırma Komutları
+
+![Java-Interpreter-Step-by-Step1](https://github.com/user-attachments/assets/204d61e1-354c-4778-8b0f-38d5f4973e3e)
 
 - Bir Java programı derlendiğinde, programın byte-code sürümü `.java` uzantısından `.class` uzantısına dönüştürülür.
   ```
