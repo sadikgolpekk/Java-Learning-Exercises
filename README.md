@@ -185,3 +185,46 @@ System.out.println(var + " kez A");
   Verilerin ve bu verilere erişim yöntemlerinin bir sınıf içerisinde saklanması ve dış dünyadan gizlenmesidir. Bu sayede, veri güvenliği ve program modülerliği sağlanır.
 
 
+# Java Kimlik Kuralları (Identifiers)
+
+## Kimlikler (Identifiers)
+
+Java'da **kimlikler** (identifiers), değişkenlerin, metodların veya sınıfların isimleridir. Bir kimlik, yalnızca harfler, rakamlar, alt çizgi karakteri (_) ve dolar işareti ($) içerebilir. Ayrıca, bir kimlik **rakamla** başlayamaz. Türkçe karakterler de kullanılabilir.
+
+### Geçerli Kimlik Kuralları:
+- **Harfler** (büyük ve küçük harfler) içerebilir.
+- **Sayılardan** başlamamalıdır (ilk karakter sayı olamaz).
+- **Sayılardan** (0-9), **harflerden**, **alt çizgi (_) karakteri** ve bazı **para birimi sembollerinden** (dolar $, sterlin £, euro €) kullanılabilir.
+- **Boşluk**, **nokta (.)**, **yıldız (*)**, **@** gibi özel karakterler içeremez.
+- **Türkçe karakterler** kullanılabilir.
+
+### Geçerli Kimlikler:
+Aşağıdaki değişken isimleri **geçerli** kimliklerdir çünkü Java'nın kurallarına uyar:
+
+- `int test1;`  *(Geçerli: Sayılar içerebilir, ancak ilk karakter rakam olmamalıdır.)*
+- `int test23we;` *(Geçerli: Sayı ve harf karışımı olmasına rağmen, ilk karakter rakam değildir.)*
+- `int df_;` *(Geçerli: Alt çizgi (_) kullanılabilir.)*
+- `int sd$;` *(Geçerli: Dolar işareti ($) kullanılabilir.)*
+- `int şşt;` *(Geçerli: Türkçe karakterler kullanılabilir.)*
+
+### Geçersiz Kimlikler:
+Aşağıdaki değişken isimleri **geçersiz** kimliklerdir çünkü Java'nın kurallarına aykırıdır:
+
+- `int k!34;`  *(Geçersiz: İçinde `!` karakteri bulunuyor.)*
+- `int 2dfg;`  *(Geçersiz: İlk karakter rakamla başlıyor.)*
+- `int @kl;`   *(Geçersiz: İçinde `@` sembolü bulunuyor.)*
+- `int $fg;`   *(Geçersiz: Dolar işareti ($) geçerli olsa da, genellikle sadece dolar ile başlamak yaygın değildir.)*
+- `int k.t;`   *(Geçersiz: İçinde nokta (.) karakteri bulunuyor.)*
+- `int k-t;`   *(Geçersiz: İçinde tire (-) karakteri bulunuyor.)*
+- `int $;`     *(Geçersiz: Dolar işareti ($) ile başlayan bir isim olması genellikle önerilmez.)*
+- `int a ei;`  *(Geçersiz: İçinde boşluk bulunuyor.)*
+
+### Notlar:
+- Kimlikler **istediğiniz kadar uzun** olabilir.
+- Java, **büyük/küçük harf duyarlıdır**, yani `stuff`, `Stuff` ve `STUFF` üç farklı kimliktir.
+- **Anahtar Kelimeler** (örneğin, `int`, `public`, `class`, `if`) özel anlamlara sahip olduğundan, kimlik olarak kullanılamazlar.
+
+## Sonuç:
+Java'da bir kimlik belirlerken, yukarıdaki kurallara uymanız gerekmektedir. Kimlikler sadece harfler, sayılar, alt çizgi (_) ve para birimi sembollerini içerebilir. İlk karakterin bir rakam olmaması gerektiğini unutmayın. Ayrıca, özel semboller ve boşluk gibi karakterler geçerli kimlik isimlerinde bulunmamalıdır.
+
+
