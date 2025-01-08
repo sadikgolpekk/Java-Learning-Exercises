@@ -3,7 +3,7 @@
 
 Java, popüler bir programlama dilidir ve geniş bir kullanım alanına sahiptir. Başlangıçta, Sun Microsystems tarafından geliştirilmiş olan bu dil, daha sonra Oracle tarafından satın alınmıştır. Java'nın en belirgin özelliklerinden biri, "Bir kez derle, her yerde çalıştır" (Compile once, run anywhere) ilkesini benimsemesidir. Bu özellik sayesinde Java programları farklı platformlarda tekrar derleme gerekmeksizin çalışabilir.
 
-
+![javaFeature_img](https://github.com/user-attachments/assets/a72843e7-e12f-4e59-9db4-b892fcd88a0e)
 
 ## JVM - Java Sanal Makinesi
 
