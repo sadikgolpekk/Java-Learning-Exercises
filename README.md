@@ -1,6 +1,8 @@
 # Platform Bağımsızlığı
 
-Java, "Compile once, run everywhere" (Bir kez derle, her yerde çalıştır) felsefesini benimser. Bu, Java programlarının farklı platformlarda tekrar derleme gerekmeksizin çalışabileceği anlamına gelir.
+Java, popüler bir programlama dilidir ve geniş bir kullanım alanına sahiptir. Başlangıçta, Sun Microsystems tarafından geliştirilmiş olan bu dil, daha sonra Oracle tarafından satın alınmıştır. Java'nın en belirgin özelliklerinden biri, "Bir kez derle, her yerde çalıştır" (Compile once, run anywhere) ilkesini benimsemesidir. Bu özellik sayesinde Java programları farklı platformlarda tekrar derleme gerekmeksizin çalışabilir.
+
+
 
 ## JVM - Java Sanal Makinesi
 
